@@ -15,18 +15,14 @@
     <main class="container">
       <!-- Card Metallica -->
       <section class="pack-card">
-        <h2>Metallica Signature Pack</h2>
+        <h2>Metallica Signature <span class="badge-count">(4 presets)</span></h2>
         <p>Os clássicos do Metallica.</p>
 
         <label>Ouça a prévia:</label>
         <audio controls>
-          <source
-            src="audios/(Audio) 2026-03-12 18-06-07.m4a"
-            type="audio/mpeg"
-          />
+          <source src="audios/(Audio) 2026-03-12 18-06-07.m4a" type="audio/mpeg" />
         </audio>
 
-        <!-- BOTÃO CORRIGIDO -->
         <button class="btn-info" onclick="toggleConteudo('lista-met')">
           Ver o que vem no Pack
         </button>
@@ -40,43 +36,41 @@
 
         <div class="buy-area">
           <div class="price">R$ 30,00 no Pix</div>
-          <a href="https://wa.me/46999119414" class="btn-buy" target="_blank">
+          <a href="https://wa.me" class="btn-buy" target="_blank">
             Comprar via WhatsApp
           </a>
         </div>
       </section>
 
-         <!-- Card Megadeth -->
-         <section class="pack-card">
-          <h2>Megadeth Thrash Pack</h2>
-          <p>O som cortante de Dave Mustaine.</p>
-  
-          <label>Ouça a prévia:</label>
-          <audio controls>
-            <!-- AJUSTE AQUI: pasta "audios/" e type "audio/x-m4a" -->
-            <source src="audios/(Audio) 2026-03-12 18-48-24.m4a" type="audio/x-m4a" />
-          </audio>
-  
-          <button class="btn-info" onclick="toggleConteudo('lista-mega')">
-            Ver o que vem no Pack
-          </button>
-  
-          <ul id="lista-mega" class="lista-presets" style="display: none">
-            <li>🔥 Rust in peace</li>
-            <li>🔥 Youthanasia</li>
-            <li>🔥 Countdown To Extintion</li>
-          </ul>
-  
-          <div class="buy-area">
-            <div class="price">R$ 30,00 no Pix</div>
-            <!-- AJUSTE AQUI: Adicionado 55 e mensagem automática -->
-            <a href="https://wa.me/46999119414" class="btn-buy" target="_blank">
-              Comprar via WhatsApp
-            </a>
-          </div>
-        </section>
-  
-    <!-- SCRIPT (ESSENCIAL PARA O BOTÃO FUNCIONAR) -->
+      <!-- Card Megadeth -->
+      <section class="pack-card">
+        <h2>Megadeth Thrash <span class="badge-count">(3 presets)</span></h2>
+        <p>O som cortante de Dave Mustaine.</p>
+
+        <label>Ouça a prévia:</label>
+        <audio controls>
+          <source src="audios/(Audio) 2026-03-12 18-48-24.m4a" type="audio/x-m4a" />
+        </audio>
+
+        <button class="btn-info" onclick="toggleConteudo('lista-mega')">
+          Ver o que vem no Pack
+        </button>
+
+        <ul id="lista-mega" class="lista-presets" style="display: none">
+          <li>🔥 Rust in peace</li>
+          <li>🔥 Youthanasia</li>
+          <li>🔥 Countdown To Extintion</li>
+        </ul>
+
+        <div class="buy-area">
+          <div class="price">R$ 30,00 no Pix</div>
+          <a href="https://wa.me" class="btn-buy" target="_blank">
+            Comprar via WhatsApp
+          </a>
+        </div>
+      </section>
+    </main>
+
     <script>
       function toggleConteudo(id) {
         var lista = document.getElementById(id);
