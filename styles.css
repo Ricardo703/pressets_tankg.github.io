@@ -21,6 +21,7 @@ header {
   padding: 80px 20px;
   background: radial-gradient(circle at center, #1a1a1a 0%, #0d0d0d 100%);
   border-bottom: 1px solid var(--border);
+  text-align: center;
 }
 
 header h1 {
@@ -63,11 +64,21 @@ header p {
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-bottom: 10px;
   border-bottom: 2px solid var(--accent);
   display: inline-block;
   padding-bottom: 5px;
+}
+
+/* ESTILO DO CONTADOR DE PRESETS */
+.badge-count {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  font-weight: 400;
+  margin-left: 8px;
+  text-transform: none;
+  opacity: 0.8;
 }
 
 .lista-presets {
@@ -90,7 +101,6 @@ h2 {
   color: #fff;
 }
 
-/* BOTÃO COM BRILHO REFORÇADO PARA GITHUB */
 .btn-info {
   background: transparent !important;
   border: 2px solid var(--accent) !important;
@@ -103,8 +113,6 @@ h2 {
   font-weight: 900;
   text-transform: uppercase;
   outline: none;
-  
-  /* Animação de brilho pulsante */
   -webkit-animation: button-glow 2s infinite ease-in-out;
   animation: button-glow 2s infinite ease-in-out;
   transition: all 0.3s ease;
@@ -139,13 +147,6 @@ audio {
   margin-top: 15px;
   height: 30px;
   filter: invert(1);
-}
-
-/* KEYFRAMES REFORÇADOS */
-@-webkit-keyframes button-glow {
-  0% { box-shadow: 0 0 5px rgba(230, 126, 34, 0.4); border-color: rgba(230, 126, 34, 0.4); }
-  50% { box-shadow: 0 0 20px rgba(230, 126, 34, 1); border-color: rgba(230, 126, 34, 1); }
-  100% { box-shadow: 0 0 5px rgba(230, 126, 34, 0.4); border-color: rgba(230, 126, 34, 0.4); }
 }
 
 @keyframes button-glow {
