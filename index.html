@@ -15,7 +15,10 @@
     <main class="container">
       <!-- Card Metallica -->
       <section class="pack-card">
-        <h2>Metallica Signature <span class="badge-count">(4 presets)</span></h2>
+        <div class="card-header">
+          <h2>Metallica Signature</h2>
+          <span class="badge-count">4 PRESETS</span>
+        </div>
         <p>Os clássicos do Metallica.</p>
 
         <label>Ouça a prévia:</label>
@@ -24,7 +27,7 @@
         </audio>
 
         <button class="btn-info" onclick="toggleConteudo('lista-met')">
-          Ver o que vem no Pack
+          Ver o que vem no Pack ↓
         </button>
 
         <ul id="lista-met" class="lista-presets" style="display: none">
@@ -35,7 +38,11 @@
         </ul>
 
         <div class="buy-area">
-          <div class="price">R$ 30,00 no Pix</div>
+          <div class="price-box">
+            <span class="r-symbol">R$</span>
+            <span class="main-price">30,00</span>
+            <span class="method">no Pix</span>
+          </div>
           <a href="https://wa.me" class="btn-buy" target="_blank">
             Comprar via WhatsApp
           </a>
@@ -44,7 +51,10 @@
 
       <!-- Card Megadeth -->
       <section class="pack-card">
-        <h2>Megadeth Thrash <span class="badge-count">(3 presets)</span></h2>
+        <div class="card-header">
+          <h2>Megadeth Thrash</h2>
+          <span class="badge-count">3 PRESETS</span>
+        </div>
         <p>O som cortante de Dave Mustaine.</p>
 
         <label>Ouça a prévia:</label>
@@ -53,7 +63,7 @@
         </audio>
 
         <button class="btn-info" onclick="toggleConteudo('lista-mega')">
-          Ver o que vem no Pack
+          Ver o que vem no Pack ↓
         </button>
 
         <ul id="lista-mega" class="lista-presets" style="display: none">
@@ -63,7 +73,11 @@
         </ul>
 
         <div class="buy-area">
-          <div class="price">R$ 30,00 no Pix</div>
+          <div class="price-box">
+            <span class="r-symbol">R$</span>
+            <span class="main-price">30,00</span>
+            <span class="method">no Pix</span>
+          </div>
           <a href="https://wa.me" class="btn-buy" target="_blank">
             Comprar via WhatsApp
           </a>
