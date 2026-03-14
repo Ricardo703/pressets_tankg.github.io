@@ -3,7 +3,7 @@
 :root {
   --background: #0d0d0d;
   --card-bg: #161616;
-  --accent: #e67e22; /* Laranja da capa do Master */
+  --accent: #e67e22;
   --text-main: #ffffff;
   --text-dim: #a0a0a0;
   --border: #2a2a2a;
@@ -51,7 +51,6 @@ header p {
 .pack-card {
   background: var(--card-bg);
   border: 1px solid var(--border);
-  border-radius: 0px; 
   padding: 30px;
   width: 340px;
   text-align: left;
@@ -63,65 +62,74 @@ header p {
   box-shadow: 0 0 30px rgba(230, 126, 34, 0.1);
 }
 
+/* NOVO: Cabeçalho do Card */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
 h2 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
+  font-size: 1.2rem;
+  margin: 0;
   border-bottom: 2px solid var(--accent);
-  display: inline-block;
   padding-bottom: 5px;
 }
 
-/* ESTILO DO CONTADOR DE PRESETS */
+/* NOVO: Badge de Presets Laranja */
 .badge-count {
-  font-size: 0.8rem;
-  color: var(--text-dim);
-  font-weight: 400;
-  margin-left: 8px;
-  text-transform: none;
-  opacity: 0.8;
+  background: var(--accent);
+  color: #000;
+  font-size: 0.7rem;
+  font-weight: 900;
+  padding: 4px 8px;
+  border-radius: 2px;
 }
 
 .lista-presets {
   margin: 20px 0;
-  padding: 0;
+  padding: 10px;
   list-style: none;
+  background: rgba(255,255,255,0.03);
 }
 
 .lista-presets li {
   padding: 8px 0;
   border-bottom: 1px solid #222;
-  color: var(--text-dim);
+  color: #ddd;
   font-size: 0.95rem;
 }
 
-.price {
-  font-size: 2rem;
-  font-weight: 900;
-  margin: 20px 0;
-  color: #fff;
+/* NOVO: Preço Chamativo */
+.price-box {
+  margin: 25px 0 15px 0;
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
 }
+
+.r-symbol { font-size: 1.1rem; font-weight: 700; color: var(--accent); }
+.main-price { font-size: 2.8rem; font-weight: 900; line-height: 1; }
+.method { font-size: 0.9rem; color: var(--text-dim); }
 
 .btn-info {
   background: transparent !important;
-  border: 2px solid var(--accent) !important;
+  border: 1px solid var(--accent) !important;
   color: var(--accent) !important;
-  padding: 12px;
+  padding: 10px;
   cursor: pointer;
   width: 100%;
-  margin-bottom: 10px;
+  margin-top: 15px;
   font-size: 0.8rem;
   font-weight: 900;
   text-transform: uppercase;
-  outline: none;
-  -webkit-animation: button-glow 2s infinite ease-in-out;
   animation: button-glow 2s infinite ease-in-out;
-  transition: all 0.3s ease;
 }
 
 .btn-info:hover {
   background: var(--accent) !important;
   color: #000 !important;
-  box-shadow: 0 0 25px var(--accent);
 }
 
 .btn-buy {
@@ -140,6 +148,7 @@ h2 {
 .btn-buy:hover {
   background: var(--accent);
   color: #fff;
+  transform: scale(1.02);
 }
 
 audio {
@@ -150,7 +159,7 @@ audio {
 }
 
 @keyframes button-glow {
-  0% { box-shadow: 0 0 5px rgba(230, 126, 34, 0.4); border-color: rgba(230, 126, 34, 0.4); }
-  50% { box-shadow: 0 0 20px rgba(230, 126, 34, 1); border-color: rgba(230, 126, 34, 1); }
-  100% { box-shadow: 0 0 5px rgba(230, 126, 34, 0.4); border-color: rgba(230, 126, 34, 0.4); }
+  0% { box-shadow: 0 0 5px rgba(230, 126, 34, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(230, 126, 34, 0.8); }
+  100% { box-shadow: 0 0 5px rgba(230, 126, 34, 0.3); }
 }
